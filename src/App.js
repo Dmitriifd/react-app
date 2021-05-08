@@ -4,20 +4,26 @@ import './App.css';
 
 const App = () => {
   return (
-    <div className="App">
-      <header>
-        <img src="logo.png" alt="logo" />
+    <div className="app-wrapper">
+      <header className="header">
+        <img src="images/logo.png" alt="logo" />
       </header>
-      <nav>
+      <nav className="nav">
         <div>
-          Profile
+          <a href="q#">Profile</a>
         </div>
         <div>
-          Message
+          <a href="q#">Messages</a>
+        </div>
+        <div>
+          <a href="q#">News</a>
+        </div>
+        <div>
+          <a href="q#">Music</a>
         </div>
       </nav>
-      <div>
-        Main content
+      <div className="content">
+        <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" alt="" />
       </div>
     </div>
   );
