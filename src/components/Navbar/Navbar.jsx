@@ -4,23 +4,23 @@ const Navbar = () => {
     return (
         <nav className={s.nav}>
             <div className={s.item}>
-                <a href="q#">Profile</a>
+                <a href="/profile">Profile</a>
             </div>
             <div className={s.item}>
-                <a href="q#">Messages</a>
+                <a href="/dialogs">Messages</a>
             </div>
             <div className={s.item}>
-                <a href="q#">News</a>
+                <a href="/news">News</a>
             </div>
             <div className={s.item}>
-                <a href="q#">Music</a>
+                <a href="/music">Music</a>
             </div>
             <div className={s.item}>
-                <h1 style={{ color: 'red'}}>Привет мир</h1>
+                <a href="/settings">Settings</a>
             </div>
         </nav>
     )
 }
-console.log(s);
+
 
 export default Navbar;
