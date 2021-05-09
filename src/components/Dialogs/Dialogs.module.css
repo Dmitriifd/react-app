@@ -2,3 +2,27 @@
     grid-area: c;
     background-color: rgb(167, 174, 180);
   }
+
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+
+.dialogsItems {
+  padding: 10px;
+}
+.dialogsItems .active {
+  color: gold;
+}
+
+.dialog {
+
+}
+
+.messages {
+  padding: 10px;
+}
+
+.message {
+
+}
