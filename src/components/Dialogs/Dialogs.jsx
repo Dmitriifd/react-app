@@ -21,6 +21,7 @@ const Dialogs = (props) => {
       <div className={s.messages}>
         { messagesElements }
         {/* <Message message={messagesData[0].message}/>*/}
+        
       </div>
     </div>
   );
