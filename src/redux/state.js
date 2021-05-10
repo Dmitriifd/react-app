@@ -1,5 +1,8 @@
-import {renderEntireTree} from '../render';
- 
+let renderEntireTree = () => {
+    console.log('dsds');
+}
+
+
 let state = {
   profilePage: {
     posts: [
@@ -26,22 +29,26 @@ let state = {
   sidebar: {}
 };
 
-export let addPost = () => {
+export const addPost = () => {
     let newPost = {
         id:  5,
         message: state.profilePage.newPostText,
         likesCount: 0
     };
-
+    
     state.profilePage.posts.push(newPost);
     state.profilePage.newPostText = '';
     renderEntireTree(state);
 }
 
-export let updateNewPostText = (newText) => {
+export const updateNewPostText = (newText) => {
    
     state.profilePage.newPostText = newText;
     renderEntireTree(state);
+}
+
+export const subscribe = (observer) => {
+    renderEntireTree = observer;
 }
 
 export default state;
